@@ -28,7 +28,7 @@ public class TerrainGenerator : MonoBehaviour {
             GetComponent<GeneratingObjects>().generateCover();
 
             // Apply the textures
-            GetComponent<Grass>().paintTextures(terrain, terrain.terrainData);
+            GetComponent<TextureGenerator>().paintTextures(terrain, terrain.terrainData);
         }
     }
 
@@ -86,7 +86,7 @@ public class TerrainGenerator : MonoBehaviour {
         GetComponent<GeneratingObjects>().generateCover();
 
         // Apply the textures
-        GetComponent<Grass>().paintTextures(terrain, terrain.terrainData);
+        GetComponent<TextureGenerator>().paintTextures(terrain, terrain.terrainData);
     }
 
     public void SaveMap(GameObject saveObject)

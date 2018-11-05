@@ -40,6 +40,8 @@ public class GeneratingObjects : MonoBehaviour {
                 float curGameObjectWidth = curGameObjectRenderer.bounds.size.x;
                 float curGameObjectDepth = curGameObjectRenderer.bounds.size.z;
 
+                print(curGameObject.name + ": " + curGameObjectWidth + "     " + curGameObjectDepth);
+
                 switch (curGameObject.tag) {
                     case "Cover":
                         float biggestObjectRadius = (curGameObjectWidth >= curGameObjectDepth ? curGameObjectWidth : curGameObjectDepth) / 2;
@@ -96,6 +98,10 @@ public class GeneratingObjects : MonoBehaviour {
 
                                     // Set position of the gameobject
                                     Vector3 generatedPosition = generateObjectPosition(curGameObjectRenderer, x, z);
+
+                                    generatedPosition = new Vector3(generatedPosition.x, 
+                                        generatedPosition.y - curInstantiatedGameObject.GetComponent<Renderer>().bounds.extents.x,
+                                        generatedPosition.z);
 
                                     // Apply generated position and rotation to the gameobject
                                     curInstantiatedGameObject.transform.position = generatedPosition;
