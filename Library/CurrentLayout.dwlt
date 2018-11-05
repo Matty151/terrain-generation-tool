@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 80
+  controlID: 33
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,10 +156,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 713, y: 471}
-  m_MaxSize: {x: 18008, y: 14021}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 79
+  controlID: 32
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 280
     height: 731
-  m_MinSize: {x: 234, y: 471}
-  m_MaxSize: {x: 10004, y: 14021}
+  m_MinSize: {x: 234, y: 492}
+  m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 59
+  controlID: 56
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,8 +228,8 @@ MonoBehaviour:
     y: 0
     width: 280
     height: 322
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -396,9 +396,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.7319894, y: 54.960873, z: 24.022507}
+    m_Target: {x: 9.38251, y: 58.711266, z: 30.480423}
     speed: 2
-    m_Value: {x: 2.7319894, y: 54.960873, z: 24.022507}
+    m_Value: {x: 9.38251, y: 58.711266, z: 30.480423}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -426,9 +426,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.17783763, y: -0.30940026, z: 0.059018057, w: -0.93228865}
+    m_Target: {x: -0.21956539, y: -0.33922318, z: 0.081751205, w: -0.9110628}
     speed: 2
-    m_Value: {x: -0.17783763, y: -0.30940026, z: 0.059018057, w: -0.93228865}
+    m_Value: {x: -0.21956539, y: -0.33922318, z: 0.081751205, w: -0.9110628}
   m_Size:
     m_Target: 34.435898
     speed: 2
@@ -513,9 +513,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4330000
-    m_LastClickedID: 13300
-    m_ExpandedIDs: f07cfaff22fbfdffe4fbffff00000000
+    m_SelectedIDs: e22d0000
+    m_LastClickedID: 11746
+    m_ExpandedIDs: dafbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,19 +576,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tree9
+    - Assets/Scripts
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Documents\HAN\GAME-minor\Unity Projects\GeneratingCover
+  m_LastProjectPath: D:\Documents\HAN\GAME-minor\Unity Projects\TerrainGenerationTool
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 7a310000
     m_LastClickedID: 12666
-    m_ExpandedIDs: 00000000ea290000642a0000742a0000ae2b00005e2c0000742c0000842c0000fe2c0000
+    m_ExpandedIDs: 00000000f22900006c2a00007e2a00008e2a0000c82a0000ee2b0000202c0000b02c0000c62c0000de2c0000782d0000962d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -613,10 +613,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 338}
+    scrollPos: {x: 0, y: 218}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000ea290000642a0000742a0000ae2b00005e2c0000742c0000842c0000fe2c0000882f00003c300000403000007a330000
+    m_ExpandedIDs: ffffffff00000000f22900006c2a00007e2a00008e2a0000c82a0000ee2b0000202c0000b02c0000c62c0000de2c0000782d0000962d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
