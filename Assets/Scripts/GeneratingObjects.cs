@@ -42,10 +42,10 @@ public class GeneratingObjects : MonoBehaviour {
 
                 switch (curGameObject.tag) {
                     case "Cover":
-                        float biggestObjectRadius = (curGameObjectWidth >= curGameObjectDepth ? curGameObjectWidth : curGameObjectDepth) / 2;
+                        float biggestObjectRadius = (curGameObjectWidth >= curGameObjectDepth ? curGameObjectWidth : curGameObjectDepth);
 
                         for (float x = biggestObjectRadius; x < terrain.terrainData.size.x; x += curGameObjectWidth + coverXOffset) {
-                            for (float z = biggestObjectRadius; z < terrain.terrainData.size.z - biggestObjectRadius + curGameObjectRenderer.bounds.extents.z; z += curGameObjectDepth + coverZOffset) {
+                            for (float z = biggestObjectRadius; z < terrain.terrainData.size.z; z += curGameObjectDepth + coverZOffset) {
                                 if (Random.Range(0, 100) < frequencyPerGameObject[allGameObjects.IndexOf(curGameObject)]) {
                                     GameObject curInstantiatedCover = Instantiate(curGameObject);
                                     curInstantiatedCover.name = "Cover" + x + "_" + z;
@@ -97,10 +97,10 @@ public class GeneratingObjects : MonoBehaviour {
                                     // Set position of the gameobject
                                     Vector3 generatedPosition = generateObjectPosition(curGameObjectRenderer, x, z);
 
-                                    generatedPosition = new Vector3(
-                                        generatedPosition.x, 
-                                        generatedPosition.y - curInstantiatedGameObject.GetComponent<Renderer>().bounds.extents.x,
-                                        generatedPosition.z);
+                                    //generatedPosition = new Vector3(
+                                    //    generatedPosition.x, 
+                                    //    generatedPosition.y - curInstantiatedGameObject.GetComponent<Renderer>().bounds.extents.y,
+                                    //    generatedPosition.z);
 
                                     // Apply generated position and rotation to the gameobject
                                     curInstantiatedGameObject.transform.position = generatedPosition;
@@ -136,22 +136,18 @@ public class GeneratingObjects : MonoBehaviour {
         float terrainHeightOnCurrentPos = terrain.SampleHeight(curCoverPosition) - slopeHeightDifferenceMargin;
 
         if (terrain.SampleHeight(leftSideRenderer) < terrainHeightOnCurrentPos) {
-            //adjustedPosition += new Vector3(renderer.bounds.extents.x, 0, 0);
             curCover.transform.Translate(new Vector3(coverRenderer.bounds.extents.x, 0, 0));
         }
 
         if (terrain.SampleHeight(rightSideRenderer) < terrainHeightOnCurrentPos) {
-            //adjustedPosition -= new Vector3(renderer.bounds.extents.x, 0, 0);
             curCover.transform.Translate(new Vector3(-coverRenderer.bounds.extents.x, 0, 0));
         }
 
         if (terrain.SampleHeight(topSideRenderer) < terrainHeightOnCurrentPos) {
-            //adjustedPosition -= new Vector3(0, 0, renderer.bounds.extents.z);
             curCover.transform.Translate(new Vector3(0, 0, -coverRenderer.bounds.extents.z));
         }
 
         if (terrain.SampleHeight(bottomSideRenderer) < terrainHeightOnCurrentPos) {
-            //adjustedPosition += new Vector3(0, 0, renderer.bounds.extents.z);
             curCover.transform.Translate(new Vector3(0, 0, coverRenderer.bounds.extents.z));
         }
 

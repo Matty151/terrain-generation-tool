@@ -5,7 +5,6 @@ using System.Linq;
 public class TextureGenerator : MonoBehaviour {
 
     public int[] textureHeight;
-    public int textureMergeThreshold;
 
     public void paintTextures(Terrain terrain, TerrainData terrainData) {
 

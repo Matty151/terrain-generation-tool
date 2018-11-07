@@ -5,7 +5,10 @@ using UnityEngine;
 public class TerrainGenerator : MonoBehaviour {
 
     public int depth = 20;
+
+    [Tooltip("Value between 0 and 1")]
     public float groundLevel = 0.6f;
+
     public int width = 256;
     public int height = 256;
     public int scale = 20;

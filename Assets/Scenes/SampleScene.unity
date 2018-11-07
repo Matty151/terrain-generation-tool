@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de27f9ce31e332148b437103de240feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  depth: 40
+  depth: 50
   groundLevel: 0
   width: 256
   height: 256
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allGameObjects:
   - {fileID: 1414538796470882, guid: 3bb44bf54a283a54f987fb592d78cb55, type: 2}
-  - {fileID: 114418, guid: 8b2d47fdc2e25ac4f9721480a68bbefa, type: 2}
+  - {fileID: 1125915439394386, guid: 8c7032a79fb4c1147a0686d870297b0e, type: 2}
   frequencyPerGameObject: 1900000003000000
   allowedRotationAgles: 000000005a000000
   maxSlopeAngle: 20
@@ -239,7 +239,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textureHeight: 14000000190000001e000000
-  textureMergeThreshold: 2
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
