@@ -220,11 +220,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allGameObjects:
   - {fileID: 1414538796470882, guid: 3bb44bf54a283a54f987fb592d78cb55, type: 2}
-  - {fileID: 0}
+  - {fileID: 1125915439394386, guid: 8c7032a79fb4c1147a0686d870297b0e, type: 2}
   frequencyPerGameObject: 1400000003000000
   allowedRotationAgles: 000000005a000000
   maxSlopeAngle: 20
-  slopeHeightDifferenceMargin: 1
+  slopeHeightDifferenceMargin: 0
   coverXOffset: 0
   coverZOffset: 4
 --- !u!114 &28499981

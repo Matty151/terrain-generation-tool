@@ -148,7 +148,7 @@ public class GeneratingObjects : MonoBehaviour {
 
         curCover.transform.position = new Vector3(
             curCover.transform.position.x, 
-            terrain.SampleHeight(curCover.transform.position) + coverRenderer.bounds.extents.y, 
+            terrain.SampleHeight(curCover.transform.position) + coverRenderer.bounds.extents.y,
             curCover.transform.position.z
         );
     }
