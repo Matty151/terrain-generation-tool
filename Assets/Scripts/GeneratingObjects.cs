@@ -97,11 +97,6 @@ public class GeneratingObjects : MonoBehaviour {
                                     // Set position of the gameobject
                                     Vector3 generatedPosition = generateObjectPosition(curGameObjectRenderer, x, z);
 
-                                    //generatedPosition = new Vector3(
-                                    //    generatedPosition.x, 
-                                    //    generatedPosition.y - curInstantiatedGameObject.GetComponent<Renderer>().bounds.extents.y,
-                                    //    generatedPosition.z);
-
                                     // Apply generated position and rotation to the gameobject
                                     curInstantiatedGameObject.transform.position = generatedPosition;
                                 }
