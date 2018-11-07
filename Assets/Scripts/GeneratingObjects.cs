@@ -17,7 +17,7 @@ public class GeneratingObjects : MonoBehaviour {
     public int maxSlopeAngle;
 
     [Tooltip("Any height difference that is greater than this number, will be seen as an edge (which means the cover will reposition to not hang over the edge).")]
-    public float slopeHeightDifferenceMargin;
+    public float slopeHeightDifference;
 
     [Header("Cover settings")]
     public float coverXOffset;
@@ -128,7 +128,7 @@ public class GeneratingObjects : MonoBehaviour {
         Vector3 topSideRenderer = new Vector3(curCoverPosition.x, 0, curCoverPosition.z + coverRenderer.bounds.extents.z);
         Vector3 bottomSideRenderer = new Vector3(curCoverPosition.x, 0, curCoverPosition.z - coverRenderer.bounds.extents.z);
         
-        float terrainHeightOnCurrentPos = terrain.SampleHeight(curCoverPosition) - slopeHeightDifferenceMargin;
+        float terrainHeightOnCurrentPos = terrain.SampleHeight(curCoverPosition) - slopeHeightDifference;
 
         if (terrain.SampleHeight(leftSideRenderer) < terrainHeightOnCurrentPos) {
             curCover.transform.Translate(new Vector3(coverRenderer.bounds.extents.x, 0, 0));
